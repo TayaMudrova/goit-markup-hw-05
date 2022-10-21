@@ -132,6 +132,23 @@ img {
   color: var(--accent-color);
 }
 
+.current{
+  position: relative;
+  color: var(--accent-color);
+}
+
+.current::after{
+  display: block;
+  content: '';
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
 .contacts {
   display: flex;
   margin-left: auto;
