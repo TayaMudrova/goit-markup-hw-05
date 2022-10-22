@@ -126,7 +126,7 @@ img {
   letter-spacing: 0.02em;
   display: block;
   padding: 32px 0;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
@@ -166,7 +166,7 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-icon {
@@ -306,19 +306,19 @@ img {
 .activity-description{
   position: absolute;
   width: 100%;
-height: 70px;
-bottom: 0;
-display: flex;
-justify-content: center;
-align-items: center;
-color: var(--main-white);
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-background: rgba(47, 48, 58, 0.8);
-}
+  height: 70px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-white);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+  }
 
 /* Team-section */
 .section-team {
@@ -382,7 +382,7 @@ background: rgba(47, 48, 58, 0.8);
   align-items: center;
   width: 100%;
   height: 100%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -417,7 +417,7 @@ background: rgba(47, 48, 58, 0.8);
   height: 100%;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icon {
@@ -453,7 +453,7 @@ background: rgba(47, 48, 58, 0.8);
   letter-spacing: 0.03em;
   cursor: pointer;
   padding: 6px 22px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filtr-btn:hover,
@@ -482,18 +482,49 @@ background: rgba(47, 48, 58, 0.8);
 
 .project-link{
   display: block;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-link:hover,
 .project-link:focus {
-  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.project-overlay{
+  position: relative;
+  overflow: hidden;
+}
+
 .project-img {
   display: block;
+}
+
+.project-img-overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  padding: 0 24px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  opacity: 0.9;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-img-overlay-caption {
+  color: var(--main-white);
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+}
+
+.project-link:hover .project-img-overlay,
+.project-link:focus .project-img-overlay {
+    transform: translateY(0);
 }
 
 .project-description {
@@ -549,7 +580,7 @@ background: rgba(47, 48, 58, 0.8);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-footer-address:hover,
@@ -563,7 +594,7 @@ background: rgba(47, 48, 58, 0.8);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.02em;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-footer:hover,
